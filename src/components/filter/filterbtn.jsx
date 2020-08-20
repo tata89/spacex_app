@@ -59,7 +59,7 @@ const Filterbtn = ({ handleLauchSat, handleLandSat, handleYearLaunchSat }) => {
         {year.map((item, index) => (
           <div key={index} className={styles.year_cont_2}>
             <a
-              id={index}
+              id={item}
               onClick={handleYear}
               className={`waves-effect waves-light btn-small ${styles.btn_t}`}
             >
