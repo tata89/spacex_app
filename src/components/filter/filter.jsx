@@ -6,7 +6,7 @@ const Filters = ({ handleLauchSat, handleLandSat, handleYearLaunchSat }) => {
   return (
     <React.Fragment>
       <div className={styles.fltr_cont}>
-        <h3 className={styles.title_head}>Filters</h3>
+        <h1 className={styles.title_head}>Filters</h1>
         <Filterbtn
           handleLauchSat={handleLauchSat}
           handleLandSat={handleLandSat}

@@ -6,7 +6,6 @@ const Spacecontent = ({
     links,
     mission_id,
     mission_name,
-    flight_number,
     launch_year,
     launch_success,
     rocket: {
@@ -25,7 +24,7 @@ const Spacecontent = ({
           >
             <div className="card-image">
               <div className={styles.img_cont}>
-                <img src={links.mission_patch} />
+                <img alt="something" src={links.mission_patch} />
               </div>
             </div>
             <div style={{ paddingTop: "0px" }} className="card-content">

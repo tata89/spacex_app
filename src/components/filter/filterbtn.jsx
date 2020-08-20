@@ -53,13 +53,13 @@ const Filterbtn = ({ handleLauchSat, handleLandSat, handleYearLaunchSat }) => {
   return (
     <React.Fragment>
       <div className={styles.year_cont_2}>
-        <h3 className={styles.frst_title}>Launch Year</h3>
+        <h2 className={styles.frst_title}>Launch Year</h2>
       </div>
       <div className={styles.year_cont}>
-        {year.map((item) => (
-          <div className={styles.year_cont_2}>
+        {year.map((item, index) => (
+          <div key={index} className={styles.year_cont_2}>
             <a
-              id={item}
+              id={index}
               onClick={handleYear}
               className={`waves-effect waves-light btn-small ${styles.btn_t}`}
             >
@@ -69,7 +69,7 @@ const Filterbtn = ({ handleLauchSat, handleLandSat, handleYearLaunchSat }) => {
         ))}{" "}
       </div>
       <div className={styles.year_cont_2}>
-        <h3 className={styles.frst_title}>Succesful Launch</h3>
+        <h2 className={styles.frst_title}>Succesful Launch</h2>
       </div>
       <div className={styles.year_cont}>
         <div className={styles.year_cont_2}>
@@ -91,7 +91,7 @@ const Filterbtn = ({ handleLauchSat, handleLandSat, handleYearLaunchSat }) => {
         </div>
       </div>
       <div className={styles.year_cont_2}>
-        <h3 className={styles.frst_title}>Succesful Landing</h3>
+        <h2 className={styles.frst_title}>Succesful Landing</h2>
       </div>
       <div className={styles.year_cont}>
         <div className={styles.year_cont_2}>
