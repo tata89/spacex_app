@@ -1,0 +1,49 @@
+.spacecard_cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.img_cont {
+  background-color: #f2f2f2;
+  margin: 15px;
+}
+.miss_name {
+  color: #464e96;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+.p_title {
+  font-weight: 700;
+}
+.p_data {
+  margin-left: 5px;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .spacecard_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .space_main_cont {
+    margin-top: 15px;
+  }
+  .app_cont {
+    margin: 0px !important;
+  }
+  .spacecard_cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .card_col {
+    padding: 0px !important;
+  }
+  .cardcont {
+    max-height: 550px;
+    height: 550px !important;
+  }
+}

@@ -1,0 +1,48 @@
+.title_head {
+  text-align: left;
+  font-size: 1.25rem;
+  margin: 0px;
+  font-weight: 700;
+}
+.fltr_cont {
+  background-color: #ffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+.frst_title {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px;
+}
+.year_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.year_cont_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_t {
+  background-color: #c5e09b;
+  color: black;
+  text-decoration: none !important;
+}
+
+.btn_t:hover {
+  background-color: #c5e09b;
+  color: black;
+}
+.active {
+  background-color: #7cba01 !important;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .year_cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
